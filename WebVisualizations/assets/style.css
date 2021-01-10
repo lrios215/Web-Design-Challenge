@@ -1,0 +1,15 @@
+.container {
+  min-height: 100px;
+  padding: 20px;
+  margin: 20px;
+  font-weight: 500;
+  color: rgb(7, 6, 112);
+  background-color: rgb(140, 166, 189);
+}
+
+
+.TextWrap {
+  clear: left;
+  float: left;
+  margin: 10px;
+}
