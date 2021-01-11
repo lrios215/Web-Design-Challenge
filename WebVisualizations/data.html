@@ -7,6 +7,7 @@
   <style>.TextWrap {float: left; margin: 5px;}</style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/reset.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,9 +20,6 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="landing.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="comparisions.html">Comparison</a>
@@ -37,6 +35,9 @@
             <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -49,10 +50,16 @@
         <img class="TextWrap" src="visualizations/lat_windspeed_plot.png" alt="...">
         <p>This analysis visualizes the weather of 500+ cities across the world of varying 
           distance from the equator and creates a representative model of weather across world cities. 
-          This analysis utilizes a simple Python library, and the OpenWeatherMap API.</p>
+          This analysis utilizes a simple Python library, and the OpenWeatherMap API.</p>    
       </div>  
     </div>  
   </div> 
+
+  <div class="table-responsive">
+    <table class="table">
+      <a href="weatherdata.html"></a>
+    </table>
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

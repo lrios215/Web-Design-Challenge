@@ -7,6 +7,7 @@
   <style>.TextWrap {float: left; margin: 5px;}</style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/reset.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,9 +20,6 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="landing.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="comparisions.html">Comparison</a>
@@ -37,18 +35,37 @@
             <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="weatherdata.html">Data</a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="container border">
-    <h1 class="text-center">Temperature vs Latitude</h1>
+    <h1 class="text-center">Max Temperature (F) vs Latitude</h1>
     <div class = "row">
       <div class ="col-md-12">
         <img class="TextWrap" src="visualizations/lat_temp_plot.png" alt="...">
-        <p>This analysis visualizes the weather of 500+ cities across the world of varying 
-          distance from the equator and creates a representative model of weather across world cities. 
-          This analysis utilizes a simple Python library, and the OpenWeatherMap API.</p>
+        <br>
+        <p>There are strong correlations between latitude and max temperature (F) in both hemispheres (see figure 1 and linear regression models). 
+          In the Northern Hemisphere there is a strong negative correlation (r = -0.88) between latitude and max temperature (F), as a city's latitude increases the temperature decreases. 
+          In the Southern Hemisphere there is a strong positive correlation (r = 0.70) between latitude and max tempearture (F), as a city's latitude increases the temperature also increases.
+        </p>
+        <br>
+        <p>
+          Linear regressions were run on each weather relationship analyzed above, separated into Northern Hemisphere (greater than or equal to 0 degrees latitude) 
+          and Southern Hemisphere (less than 0 degrees latitude):
+        </p>
+        <br>
+        <p>
+          Northern Hemisphere - Temperature (F) vs. Latitude: The r-squared is: -0.8592238867153817.
+          Observation: strong negative correlation (r value = -0.88), in N. Hem as Lat increases max temp decreases, moving away from the equator
+        </p>
+        <br>
+        <p>Southern Hemisphere - Temperature (F) vs. Latitude: The r-squared is: 0.7875847756781865.
+          Observation: strong positive correlation (r value = 0.70), in S. Hem as Lat increases max temp increases moving toward the equator.
+        </p>
       </div>  
     </div>  
   </div>

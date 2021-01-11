@@ -7,6 +7,7 @@
   <style>.TextWrap {float: left; margin: 5px;}</style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/reset.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,7 +22,7 @@
           <a class="nav-link" href="landing.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
+          <a class="nav-link" href="weatherdata.html">Data</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="comparisions.html">Comparison</a>
@@ -42,13 +43,29 @@
   </nav>
 
   <div class="container border">
-    <h1 class="text-center">Cloudiness vs Latitude</h1>
+    <h1 class="text-center">Cloudiness (%) vs Latitude</h1>
     <div class = "row">
       <div class ="col-md-12">
         <img class="TextWrap" src="visualizations/lat_cloudiness_plot.png" alt="...">
-        <p>This analysis visualizes the weather of 500+ cities across the world of varying 
-          distance from the equator and creates a representative model of weather across world cities. 
-          This analysis utilizes a simple Python library, and the OpenWeatherMap API.</p>
+        <br>
+        <p>There are no statistically significant differences in latitude and other weather data, such as humidity, cloudiness and wind speed for both hemispheres 
+          (see linear regression models and r values).
+        </p>
+        <br>
+        <p>
+          Linear regressions were run on each weather relationship analyzed above, separated into Northern Hemisphere (greater than or equal to 0 degrees latitude) and 
+          Southern Hemisphere (less than 0 degrees latitude):
+        </p>
+        <br>
+        <p>
+          Northern Hemisphere - Cloudiness (%) vs. Latitude: The r-squared is: 0.17910511898832548.
+          Observation: no correlation (r = 0.18), in N. hemisphere as lat increases no stat sig trend in cloudiness
+        </p>
+        <br>
+        <p>
+          Southern Hemisphere - Cloudiness (%) vs. Latitude: The r-squared is: 0.13547446780170858.
+          Observation: no correlation (r = 0.025), in S. hemisphere as lat increases no stat sig trend in cloudiness
+        </p>
       </div>  
     </div>  
   </div>
