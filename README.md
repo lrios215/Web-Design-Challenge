@@ -1,41 +1,13 @@
-# Web-Design-Challenge
-# Web Design Homework - Web Visualization Dashboard (Latitude)
+# Web-Design-Challenge - Web Visualization Dashboard (Latitude)
 
-## Background
+A visualization dashboard website was created using visualizations from previous weather data.
 
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
-
-![Images/landingResize.png](Images/landingResize.png)
-
-### Before You Begin
-
-1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
-
-4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
-
-5. Push the above changes to GitHub or GitLab.
-
-6. Deploy to GitHub pages. 
-
-## Latitude - Latitude Analysis Dashboard with Attitude
-
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
-
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
-
-### Website Requirements
-
-For reference, see the ["Screenshots" section](#screenshots) below.
-
-The website must consist of 7 pages total, including:
+The website must consists of 7 pages total, including:
 
 * A [landing page](#landing-page) containing:
   * An explanation of the project.
   * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
+  ![Landing Page](WebVisualizations/readme_images/landing.png)
 * Four [visualization pages](#visualization-pages), each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
@@ -66,15 +38,4 @@ Ensure your repository has regular commits (i.e. 20+ commits) and a thorough REA
 
 * You may use the [weather data](Resources/cities.csv) or choose another dataset. Alternatively, you may use the included [cities dataset](Resources/cities.csv) and pull the images from the [assets folder](Resources/assets).
 * You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
-* You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
-* Be sure to use a CSS media query for the navigation menu.
-* Be sure your website works at all window widths/sizes.
-* Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
 
-### Bonuses
-
-* Use a different dataset! The requirements above still hold, but make it your own.
-* Use a Bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
-* Add extra visualizations! The more comparisons the better, right?
-* Use meaningful glyphicons next to links in the header.
-* Have visualization navigation on every visualizations page with an active state. See the screenshots below.
