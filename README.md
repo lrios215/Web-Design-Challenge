@@ -1,8 +1,8 @@
 # Web-Design-Challenge - Web Visualization Dashboard (Latitude)
 
-## A visualization dashboard website was created using visualizations from previous weather data and HTML5, CSS3, and Bootstrap4.
+## [A visualization dashboard website was created using visualizations from previous weather data and HTML5, CSS3, and Bootstrap4](https://lrios215.github.io/Web-Design-Challenge/WebVisualizations/landing.html)
 
-## The website must consists of 7 pages total, including:
+## The website consists of 7 pages total, including:
 
 * A Landing Page containing:
   * An explanation of the project.
